@@ -1,4 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 
-ls | egrep '(html|js|css|jpg|png)' |
-perl -e 'print "<html><body><ul>"; while(<>) { chop $_; print "<li><a href=\"./$_\">$_</a></li>";} print "</ul></body></html>"' > index.html
+ROOT=./
+HTTP="/"
+OUTPUT="./index.html" 
+
+i=0
+echo "<UL>" > $OUTPUT
+for filepath in `find "$ROOT" -maxdepth 1 -mindepth 1 -not -path '*/\.*' -type d| sort`; do
+  path=`basename "$filepath"`
+  echo "  <LI>$path</LI>" >> $OUTPUT
+  echo "  <UL>" >> $OUTPUT
+  for i in `find "$filepath" -maxdepth 1 -mindepth 1 -type f| sort`; do
+    file=`basename "$i"`
+    echo "    <LI><a href=\"/$path/$file\">$file</a></LI>" >> $OUTPUT
+  done
+  echo "  </UL>" >> $OUTPUT
+done
+echo "</UL>" >> $OUTPUT
