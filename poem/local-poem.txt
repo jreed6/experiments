@@ -1,0 +1,12 @@
+This is a local poem
+I wrote it locally
+
+It is quite serious
+I did not write it joke-illy
+
+And here's another line
+Added in Atom
+With the new "atom" shell command
+
+And to move to the next line past {brackets}
+Just press "ctrl enter"
