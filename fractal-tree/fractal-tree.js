@@ -53,7 +53,7 @@ function draw() {
       ellipse(leaves[i].x, leaves[i].y, 8, 8);
       leaves[i].y += random(0, 1);
     }
-     if(count == 2){
+     if(leaves.length == 2){
       scareML();
   }
 }
