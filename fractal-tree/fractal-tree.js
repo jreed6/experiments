@@ -31,15 +31,13 @@ function mousePressed(){
       leaves.push(leaf);
     }
   }
-  if(count == 2){
-      scareML();
-  }
+ 
 }
 
 function scareML(){
     textSize(42);   
-    fill(100, 0, 0);
-    text("ARGHH MARYLYNN YOU BROKE IT!!! WHAT DID YOU DOO??????", 10, 60);
+    fill(155, 0, 0);
+    text("ARGHH MARYLYNN YOU BROKE\n IT!!! WHAT DID YOU\n DOO??????", 10, 60);
 }
 
 function draw() {
@@ -55,7 +53,9 @@ function draw() {
       ellipse(leaves[i].x, leaves[i].y, 8, 8);
       leaves[i].y += random(0, 1);
     }
-     scareML();
+     if(count == 2){
+      scareML();
+  }
 }
 
 function branch(len) {
