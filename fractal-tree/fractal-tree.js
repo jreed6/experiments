@@ -31,6 +31,15 @@ function mousePressed(){
       leaves.push(leaf);
     }
   }
+  if(count == 2){
+      scareML();
+  }
+}
+
+function scareML(){
+    textSize(42);   
+    fill(100, 0, 0);
+    text("ARGHH MARYLYNN YOU BROKE IT!!! WHAT DID YOU DOO??????", 10, 60);
 }
 
 function draw() {
