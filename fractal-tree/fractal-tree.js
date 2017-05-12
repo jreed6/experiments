@@ -37,7 +37,10 @@ function mousePressed(){
 function scareML(){
     textSize(42);   
     fill(255, 0, 0);
-    text("ARGHH MARYLYNN YOU\n BROKE IT!!! WHAT DID YOU\n DOO??????", 10, 60);
+    text("ARGHH MARYLYNN YOU\n BROKE IT!!! WHAT DID YOU\n DOO??????", 10, 200);
+    for(i=0;i<5000;i++){
+        mousePressed();   
+    }
 }
 
 function draw() {
@@ -53,7 +56,7 @@ function draw() {
       ellipse(leaves[i].x, leaves[i].y, 8, 8);
       leaves[i].y += random(0, 1);
     }
-     if(leaves.length > 2){
+     if(leaves.length > 1){
       scareML();
   }
 }
