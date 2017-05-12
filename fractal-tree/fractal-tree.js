@@ -38,7 +38,7 @@ function scareML(){
     textSize(42);   
     fill(255, 0, 0);
     text("ARGHH MARYLYNN YOU\n BROKE IT!!! WHAT DID YOU\n DOO??????", 10, 60);
-   background(0);
+
 }
 
 function draw() {
@@ -56,6 +56,7 @@ function draw() {
     }
      if(tree.length > 2){
       scareML();
+         background(0);
      }
 }
 
