@@ -63,7 +63,7 @@ function draw() {
              mousePressed();
              mousePressed();
          
-         }, 3000);
+         }, 500);
      }
 }
 
