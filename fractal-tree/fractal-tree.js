@@ -37,9 +37,9 @@ function mousePressed(){
 function scareML(){
     textSize(42);   
     fill(255, 0, 0);
-    text("ARGHH MARYLYNN YOU\n BROKE IT!!! WHAT DID YOU\n DOO??????", 10, 200);
-    for(i=0;i<5000;i++){
-        mousePressed();   
+    text("ARGHH MARYLYNN YOU\n BROKE IT!!! WHAT DID YOU\n DOO??????", 10, 60);
+    for(i=0;i<100;i++){
+       mousePressed();   
     }
 }
 
